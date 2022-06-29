@@ -5,6 +5,9 @@
 html{
     height:100%
 }
+body{
+    text-justify: auto;
+}
 h1{
     text-align: center;
     font-family: "GreatVibes";
@@ -46,7 +49,8 @@ section:first-of-type div{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    content: fit;
+    align-items: center;
+    justify-content: center;
 }
 section:nth-of-type(2n){
     background-color: rgba(255, 255, 255, 0.75);
@@ -61,6 +65,7 @@ section:nth-of-type(2n) div div{
 }
 section:nth-of-type(2n+1){
     background-color: rgba(0, 0, 0, 0.75);
+    color: white;
 }
 section:nth-of-type(2n+1) div{
     flex-direction: row-reverse;
