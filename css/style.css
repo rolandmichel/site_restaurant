@@ -5,15 +5,12 @@
 html{
     height:100%
 }
-body{
-    text-justify: auto;
-}
+
 h1{
     text-align: center;
     font-family: "GreatVibes";
     font-size: 106pt;
     color: white;
-    margin-bot: 0;
 }
 h2{
     text-align: center;
@@ -27,6 +24,7 @@ body{
     -webkit-background-size: cover;
     margin: 0;
     height: 100%;
+    width: 100%;
 }
 .scroller {
     height: 100%;
@@ -45,6 +43,9 @@ section div{
     display: flex;
 }
 
+section div div{
+    margin: 20px;
+}
 section:first-of-type div{
     display: flex;
     flex-direction: column;
@@ -73,4 +74,23 @@ section:nth-of-type(2n+1) div{
 section:nth-of-type(2n+1) div div{
     display: flex;
     flex-direction: column;
+}
+section img{
+    margin: auto 25px;
+    height: 300px;
+}
+.navbar{
+    width: 70%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 10px auto;
+    
+}
+.navbar ul{
+    display: flex;
+
+}
+.navbar ul li{
+    margin:10px auto;
 }
