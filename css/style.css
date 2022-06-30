@@ -81,16 +81,36 @@ section img{
 }
 .navbar{
     width: 70%;
+    display: flex;
     position: fixed;
     left: 0;
     right: 0;
     margin: 10px auto;
+    border: 1px solid rgb(213, 63, 29);
+    border-radius: 10px;
+    background-color: rgba(245, 245, 220,0.8); 
+    min-height: 50px;
+}
+.test{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 50px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.navbar a{
+    text-align: center;
+    margin:0;
+    padding: 15px;
+    color: crimson;
+    text-decoration: none;
     
 }
-.navbar ul{
-    display: flex;
-
+.navbar a:hover{
+    background-color: #ddd;
+    color: black;
 }
-.navbar ul li{
-    margin:10px auto;
+.navbar a:active{
+    background-color:rgb(213, 63, 29) ;
 }
