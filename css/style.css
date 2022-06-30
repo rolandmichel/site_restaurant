@@ -28,7 +28,7 @@ body{
 }
 .scroller {
     height: 100%;
-    overflow-y: auto;
+    overflow-y: scroll;
     scroll-snap-type: y mandatory;
 }
 
@@ -38,9 +38,14 @@ section{
     margin: auto;
     min-height: 100%;
     border: 1px solid black;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 section div{
     display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 section div div{
@@ -113,4 +118,41 @@ section img{
 }
 .navbar a:active{
     background-color:rgb(213, 63, 29) ;
+}
+.active{
+        background-color:rgb(213, 63, 29) ;
+
+}
+#contact{
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+
+#contact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 75%;
+
+}
+#contact textarea,input{
+    margin: 5px;
+    width: 100%;
+    resize:none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 6px 6px 10px 0px rgba(138, 130, 130, 0.73);
+}
+#envoie{
+    cursor: pointer;
+}
+#nous{
+    flex-direction: column;
+}
+#nous div{
+    margin: 20px;
+    text-justify: auto;
 }
