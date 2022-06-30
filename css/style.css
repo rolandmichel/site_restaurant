@@ -108,9 +108,16 @@ section img{
     text-align: center;
     margin:0;
     padding: 15px;
-    color: crimson;
     text-decoration: none;
     
+}
+.active{
+        background-color:rgb(213, 63, 29) ;
+        color: black;
+
+}
+a{
+    color: crimson;
 }
 .navbar a:hover{
     background-color: #ddd;
@@ -118,10 +125,6 @@ section img{
 }
 .navbar a:active{
     background-color:rgb(213, 63, 29) ;
-}
-.active{
-        background-color:rgb(213, 63, 29) ;
-
 }
 #contact{
     flex-direction: column;

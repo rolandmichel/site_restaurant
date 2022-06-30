@@ -5,7 +5,7 @@ document.getElementById("scroller").addEventListener("scroll", function(event){
 
     sections.forEach((section) => {
         const sectionTop = section.offsetTop;
-        if (event.target.scrollTop>= sectionTop) {
+        if (event.target.scrollTop>= sectionTop-20) {
           current = section.getAttribute("id"); }
       });
     
@@ -18,45 +18,20 @@ document.getElementById("scroller").addEventListener("scroll", function(event){
     })
 
 
+var emailReg = new RegExp(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/);
 
+function emailVerif(){
+    let logintest=document.getElementById("email").value
+    let isTrue = emailReg.test(logintest)
+    if(isTrue==false){
+        document.getElementById("EmailIsFalse").innerHTML="Email invalide"
+        document.getElementById("EmailIsFalse").style.color="red"
+        document.getElementById("EmailIsFalse").style.fontSize="10px"
+        document.getElementById("envoie").disabled=true;
+      }else{
+        document.getElementById("EmailIsFalse").innerHTML=""
+        document.getElementById("envoie").disabled=false;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-window.onscroll = function(){
-    var current = "";
-  
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
-      if (window.scrollY >= sectionTop) {
-        current = section.getAttribute("id"); }
-    });
-  
-    navLi.forEach((a) => {
-      a.classList.remove("active");
-      if (a.classList.contains(current)) {
-        a.classList.add("active");
-      }
-    });
-  };
-
-  */
+}
+document.getElementById("email").addEventListener("blur", emailVerif)
