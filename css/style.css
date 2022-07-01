@@ -25,11 +25,14 @@ body{
     margin: 0;
     height: 100%;
     width: 100%;
+    text-justify: auto;
+    word-break: break-word;
 }
 .scroller {
     height: 100%;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 
 
@@ -141,7 +144,8 @@ a{
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    width: 75%;
+    width: 50%;
+    margin: 50px;
 
 }
 #contact textarea,input{
@@ -161,4 +165,9 @@ a{
 #nous div{
     margin: 20px;
     text-justify: auto;
+}
+iframe{
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 6px 6px 10px 0px rgba(138, 130, 130, 0.73);
 }
